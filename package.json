@@ -1,17 +1,26 @@
 {
-  "name": "htz",
+  "name": "@haaretz/htz-frontend-cli",
   "version": "0.1.0",
   "description": "yarn workspaces autocompletion for htz-frontend",
   "main": "index.js",
-  "bin": {
-    "htz": "./index.js"
-  },
+  "bin": { "htz": "./index.js" },
   "author": "TxHawks",
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Haaretz/htz.git"
+    "url": "git+https://github.com/Haaretz/htz-frontend-cli.git"
   },
   "license": "MIT",
+  "keywords": [
+    "cli",
+    "tabtab",
+    "tab",
+    "complete",
+    "completion",
+    "autocompletion"
+  ],
   "scripts": {
     "clean": "htz-scripts clean",
     "format": "htz-scripts format",
