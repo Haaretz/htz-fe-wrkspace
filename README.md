@@ -70,6 +70,10 @@ Once set up you can run `htz` from anywhere on your system, and it will carry
 execute commands in the project. If you hit tab, it will also try and make helpful
 completion suggestions based your input.
 
+See demo here:
+
+[![asciicast](https://asciinema.org/a/bdwVICqkCZccLPtFc9zgId2YA.svg?rows=40)](https://asciinema.org/a/bdwVICqkCZccLPtFc9zgId2YA?speed=2.5&rows=40)
+
 ### Global Repository Actions
 
 When the first argument to `htz` is one of `add`, `remove` or `run`, the action
