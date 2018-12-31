@@ -1,0 +1,33 @@
+{
+  "name": "htz",
+  "version": "0.1.0",
+  "description": "yarn workspaces autocompletion for htz-frontend",
+  "main": "index.js",
+  "bin": {
+    "htz": "./index.js"
+  },
+  "author": "TxHawks",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haaretz/htz.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "clean": "htz-scripts clean",
+    "format": "htz-scripts format",
+    "lint": "htz-scripts lint"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "cross-env": "^5.2.0",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^7.0.1",
+    "inquirer": "^6.2.1",
+    "inquirer-select-directory": "^1.2.0",
+    "omelette": "^0.4.12",
+    "readdir-enhanced": "^2.2.4"
+  },
+  "devDependencies": {
+    "@haaretz/htz-react-base": "^1.1.0"
+  }
+}
