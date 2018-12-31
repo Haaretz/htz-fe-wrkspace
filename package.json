@@ -1,9 +1,11 @@
 {
   "name": "@haaretz/htz-frontend-cli",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "yarn workspaces autocompletion for htz-frontend",
   "main": "index.js",
-  "bin": { "htz": "./index.js" },
+  "bin": {
+    "htz": "./index.js"
+  },
   "author": "TxHawks",
   "publishConfig": {
     "access": "public"
