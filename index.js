@@ -59,8 +59,13 @@ function runTask(action, args, cwd) {
   const isGlobalAction = [ 'add', 'remove', 'run', ].includes(action);
   const yarnCmd = isGlobalAction ? 'workspaces' : 'workspace';
   const cmd = isGlobalAction ? action : `@haaretz/${action}`;
+  const isWin = process.platform === 'win32';
 
-  const yarnWorkspace = spawn('cross-env', [ 'yarn', yarnCmd, cmd, ...args, ], {
+  const spawnArgs = isWin
+    ? [ 'cross-env', [ 'yarn', yarnCmd, cmd, ...args, ], ]
+    : [ 'yarn', [ yarnCmd, cmd, ...args, ], ];
+
+  const yarnWorkspace = spawn(...spawnArgs, {
     cwd,
     stdio: 'inherit',
   });
